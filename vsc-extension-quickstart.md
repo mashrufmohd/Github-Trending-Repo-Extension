@@ -1,48 +1,83 @@
-# Welcome to your VS Code Extension
+# Trending Repo Analyzer - VS Code Extension
 
-## What's in the folder
+## 🚀 Quickstart Guide
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your extension and command.
-  * The sample plugin registers a command and defines its title and command name. With this information VS Code can show the command in the command palette. It doesn’t yet need to load the plugin.
-* `src/extension.ts` - this is the main file where you will provide the implementation of your command.
-  * The file exports one function, `activate`, which is called the very first time your extension is activated (in this case by executing the command). Inside the `activate` function we call `registerCommand`.
-  * We pass the function containing the implementation of the command as the second parameter to `registerCommand`.
+### 📌 Introduction
+**Trending Repo Analyzer** is a VS Code extension that helps developers analyze and track trending GitHub repositories based on stars, forks, and predicted growth. This tool allows you to filter repositories by language and timeframe, making it easy to discover popular and emerging projects.
 
-## Setup
+---
 
-* install the recommended extensions (amodio.tsl-problem-matcher, ms-vscode.extension-test-runner, and dbaeumer.vscode-eslint)
+## 📥 Installation
 
+1. Open **VS Code**.
+2. Go to the **Extensions Marketplace** (`Ctrl+Shift+X` / `Cmd+Shift+X` on Mac).
+3. Search for **Trending Repo Analyzer**.
+4. Click **Install**.
+5. Once installed, the extension is ready to use!
 
-## Get up and running straight away
+Alternatively, install via CLI:
+```sh
+code --install-extension trending-repo-analyzer
+```
 
-* Press `F5` to open a new window with your extension loaded.
-* Run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Hello World`.
-* Set breakpoints in your code inside `src/extension.ts` to debug your extension.
-* Find output from your extension in the debug console.
+---
 
-## Make changes
+## 🎯 Usage Guide
 
-* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+### 🔍 Discover Trending Repositories
+1. Open the **Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P` on Mac).
+2. Type `Trending Repo Analyzer: Show Trending Repos` and press **Enter**.
+3. The extension will display a list of trending repositories.
 
+### 🔹 Filtering Options
+- **Language:** Choose from JavaScript, Python, TypeScript, or view all languages.
+- **Timeframe:** Select daily, weekly, or monthly trending repositories.
 
-## Explore the API
+### ⭐ Bookmarking Repos
+- Click on the **Bookmark** button to save a repo for later reference.
 
-* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+### 📊 Predicting Growth
+- The extension provides a **Predicted Stars** feature based on repository growth trends.
 
-## Run tests
+---
 
-* Install the [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner)
-* Run the "watch" task via the **Tasks: Run Task** command. Make sure this is running, or tests might not be discovered.
-* Open the Testing view from the activity bar and click the Run Test" button, or use the hotkey `Ctrl/Cmd + ; A`
-* See the output of the test result in the Test Results view.
-* Make changes to `src/test/extension.test.ts` or create new test files inside the `test` folder.
-  * The provided test runner will only consider files matching the name pattern `**.test.ts`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
+## 🔧 Development & Contribution
 
-## Go further
+### 📂 Project Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/trending-repo-analyzer.git
+   cd trending-repo-analyzer
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the extension in development mode:
+   ```sh
+   npm run dev
+   ```
 
-* Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
-* [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code extension marketplace.
-* Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
+### 🛠 Debugging
+- Press `F5` to launch the extension.
+- Open the **Debug Console** to view logs and errors.
+
+### 📝 Running Tests
+```sh
+npm test
+```
+
+---
+
+## 📢 Feedback & Support
+- **Issues:** [GitHub Issues](https://github.com/your-repo/trending-repo-analyzer/issues)
+- **Feature Requests:** Open a new issue on GitHub.
+
+---
+
+### 📜 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+🚀 **Happy Coding!**

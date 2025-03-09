@@ -4,14 +4,14 @@ import { fetchRepoDetails } from './api/githubAPI';
 
 export function registerCommands(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand('Trending-Repositories-Tracker.openWidget', () => {
+    vscode.commands.registerCommand('Trending-Repo-Analyzer.openWidget', () => {
       console.log('Opening Webview...');
       createWebviewPanel(context);
     })
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand('Trending-Repositories-Tracker.analyzeRepo', async () => {
+    vscode.commands.registerCommand('Trending-Repo-Analyzer.analyzeRepo', async () => {
       const repoInput = await vscode.window.showInputBox({ prompt: 'Enter GitHub repo (e.g., facebook/react)' });
       if (repoInput) {
         const [owner, repo] = repoInput.split('/');

@@ -3,8 +3,8 @@ import { registerCommands } from './commands';
 import { initializeDatabase } from './db/bookmarks';
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Trending Repositories Tracker is now active!');
-  initializeDatabase(context.globalStorageUri.fsPath); // Initialize SQLite DB
+  console.log('Trending Repositories Analyzer is now active!');
+  initializeDatabase(context.globalStorageUri.fsPath);
   registerCommands(context);
 }
 

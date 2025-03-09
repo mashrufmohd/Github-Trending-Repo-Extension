@@ -1,71 +1,58 @@
-# Trending-Repositories-Tracker README
+# Trending Repositories Tracker - VS Code Extension
 
-This is the README for your extension "Trending-Repositories-Tracker". After writing up a brief description, we recommend including the following sections.
+## Overview
+The **Trending Repositories Tracker** is a Visual Studio Code extension that allows developers to explore and track trending GitHub repositories directly from their code editor. With powerful filtering and bookmarking capabilities, this extension helps users stay updated on the latest trending projects in various programming languages.
 
 ## Features
+✅ **Trending Repositories**: View the latest trending repositories on GitHub.
+✅ **Filtering Options**: Filter repositories by language and timeframe (daily, weekly, monthly).
+✅ **Bookmark Repositories**: Save your favorite repositories for easy access.
+✅ **Predicted Growth Analysis**: Estimate the future popularity of a repository.
+✅ **VS Code Integration**: Seamlessly integrates with VS Code for a smooth user experience.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
+1. Open **Visual Studio Code**.
+2. Go to **Extensions** (`Ctrl+Shift+X` or `Cmd+Shift+X` on Mac).
+3. Search for `Trending Repositories Tracker`.
+4. Click **Install**.
+5. Reload VS Code if necessary.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Usage
+1. Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+2. Type `Trending Repositories` and select the command.
+3. Use the dropdown filters to refine your search.
+4. Click on a repository to view details or bookmark it.
 
 ## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
+* `trendingRepoTracker.enable`: Enable/disable the extension.
+* `trendingRepoTracker.languageFilter`: Set a default programming language filter.
+* `trendingRepoTracker.timeframe`: Choose a default timeframe (`daily`, `weekly`, `monthly`).
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Requirements
+This extension requires:
+- **VS Code v1.60+**
+- **Internet connection** to fetch GitHub data.
 
 ## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Some repositories may not have descriptions or star predictions.
+- API rate limits may affect repository data retrieval.
 
 ## Release Notes
+### v1.0.0
+- Initial release with trending repo tracking, filtering, and bookmarking features.
 
-Users appreciate release notes as you update your extension.
+### v1.1.0
+- Added predicted growth analysis for repositories.
+- Improved UI for better accessibility.
 
-### 1.0.0
+## Contributing
+We welcome contributions! Feel free to:
+- Report issues
+- Suggest new features
+- Submit pull requests
 
-Initial release of ...
+## License
+This extension is licensed under the **MIT License**.
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy coding with the Trending Repositories Tracker! 🚀**
